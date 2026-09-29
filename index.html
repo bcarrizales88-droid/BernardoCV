@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bernardo Carrizales Gonzalez</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e293b', // Color principal oscuro
+                            900: '#0f172a', // Fondo de encabezado
+                        },
+                        accent: '#3b82f6', // Azul para acentos sutiles
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #f8fafc; /* slate-50 */
+        }
+        
+        /* Efecto suave para el scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilización de la barra de desplazamiento */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="text-slate-700 antialiased font-sans flex flex-col min-h-screen">
+
+    <header class="bg-navy-900 text-white shadow-lg relative z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-16">
+            <!-- Flexbox: Imagen y texto uno al lado del otro siempre -->
+            <div class="flex flex-row items-center gap-5 md:gap-8">
+                
+                <!-- Foto de perfil -->
+                <div class="flex-shrink-0 relative">
+                    <div class="w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-slate-200 flex items-center justify-center">
+                        <img src="fotocv.png" alt="Bernardo Carrizales Gonzalez" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/1e293b/ffffff?text=BC'">
+                    </div>
+                </div>
+
+                <!-- Información principal -->
+                <div class="text-left flex-1">
+                    <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-1 sm:mb-2">Bernardo Carrizales</h1>
+                    <h2 class="text-sm sm:text-xl md:text-2xl text-blue-200 font-light mb-4 sm:mb-6">Docente de Ciencias y Matemáticas / Ingeniero Químico</h2>
+                    
+                    <!-- Botones de Acción -->
+                    <div class="flex flex-wrap justify-start gap-2 sm:gap-3">
+                        <a href="https://wa.me/528125797788" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full font-medium transition duration-300 shadow-md transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                        </a>
+                        
+                        <a href="tel:+528125797788" 
+                           class="flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition duration-300 shadow-md transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone text-sm"></i> Llamar
+                        </a>
+
+                        <a href="mailto:bcarrizales88@gmail.com" 
+                           class="flex items-center gap-2 px-5 py-2.5 bg-slate-700 hover:bg-slate-600 text-white rounded-full font-medium transition duration-300 shadow-md transform hover:-translate-y-0.5">
+                            <i class="fa-regular fa-envelope"></i> Correo
+                        </a>
+
+                        <a href="CV_Bernardo_Carrizales.pdf" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 bg-white text-navy-900 hover:bg-gray-100 rounded-full font-semibold transition duration-300 shadow-md transform hover:-translate-y-0.5 border border-transparent">
+                            <i class="fa-solid fa-print"></i> Ver / Imprimir CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-10 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Columna Izquierda (Perfil, Ubicación y Competencias en móviles) -->
+            <div class="md:col-span-1 space-y-8">
+                
+                <!-- Perfil Profesional -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                    <h3 class="text-lg font-bold text-navy-800 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-user-tie text-accent"></i> Perfil Profesional
+                    </h3>
+                    <p class="text-sm leading-relaxed text-slate-600 text-justify">
+                        Ingeniero Químico con sólida trayectoria de 14 años en la industria del tratamiento de aguas, actualmente en transición y desarrollo dentro del sector educativo. Mi principal objetivo como docente es aplicar las técnicas más avanzadas para revolucionar el aula, fomentando un aprendizaje dinámico, significativo y adaptado a las necesidades de cada estudiante.
+                    </p>
+                </section>
+
+                <!-- Competencias -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                    <h3 class="text-lg font-bold text-navy-800 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-star text-accent"></i> Competencias
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg border border-blue-100">Inglés Avanzado (C1)</span>
+                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg border border-blue-100">Neuroeducación en Matemáticas</span>
+                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg border border-blue-100">Tecnologías Educativas</span>
+                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg border border-blue-100">Gestión de Proyectos</span>
+                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg border border-blue-100">Tratamiento de Aguas</span>
+                    </div>
+                </section>
+
+                <!-- Ubicación y Mapa -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                    <h3 class="text-lg font-bold text-navy-800 border-b-2 border-blue-100 pb-2 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-accent"></i> Ubicación
+                    </h3>
+                    <p class="text-sm text-slate-600 mb-4 font-medium"><i class="fa-solid fa-city mr-1 text-slate-400"></i> Monterrey, Nuevo León, México</p>
+                    
+                    <!-- Contenedor del Mapa -->
+                    <div class="overflow-hidden rounded-xl shadow-inner border border-slate-200 w-full mb-4 bg-slate-100">
+                        <!-- Iframe de Google Maps Corregido -->
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Monterrey,%20NL&t=&z=11&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Botón para abrir en Maps -->
+                    <div class="text-center md:text-left">
+                        <a href="https://maps.google.com/?q=Monterrey,+Nuevo+Leon,+Mexico" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg text-sm font-semibold transition duration-300 border border-slate-200">
+                            <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Columna Derecha (Experiencia y Educación) -->
+            <div class="md:col-span-2 space-y-8">
+                
+                <!-- Experiencia Profesional -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-navy-800 border-b-2 border-slate-100 pb-3 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-briefcase text-accent"></i> Experiencia Profesional
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <!-- Puesto 1 -->
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3.5 h-3.5 bg-accent rounded-full -left-[9px] top-1.5 border-2 border-white shadow-sm"></div>
+                            <h4 class="text-lg font-bold text-navy-800">Docente de Ciencias y Matemáticas</h4>
+                            <p class="text-sm font-semibold text-blue-600 mb-2">2024 - Actualidad</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Impartición de clases de ciencias y matemáticas. Implementación de metodologías innovadoras y principios de neuroeducación para potenciar la comprensión y el rendimiento académico de los alumnos.
+                            </p>
+                        </div>
+
+                        <!-- Puesto 2 -->
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-3.5 h-3.5 bg-slate-300 rounded-full -left-[9px] top-1.5 border-2 border-white shadow-sm"></div>
+                            <h4 class="text-lg font-bold text-navy-800">Ingeniero Químico en Tratamiento de Aguas</h4>
+                            <p class="text-sm font-semibold text-slate-500 mb-2">2010 - 2024 (14 años)</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Desarrollo, implementación y optimización de procesos químicos para el tratamiento de aguas. Responsable de gestión de proyectos, análisis de parámetros fisicoquímicos y aseguramiento de la calidad de los procesos.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Formación Académica -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-navy-800 border-b-2 border-slate-100 pb-3 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-accent"></i> Formación Académica
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Educación 1 -->
+                        <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 hover:shadow-md transition duration-300">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-blue-600 hidden sm:block">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-md font-bold text-navy-800">Maestría en Educación Integral y Socioemocional</h4>
+                                    <p class="text-sm text-blue-600 font-medium mt-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-spinner fa-spin-pulse text-xs"></i> Cursando en la actualidad
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Educación 2 -->
+                        <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 hover:shadow-md transition duration-300">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-blue-600 hidden sm:block">
+                                    <i class="fa-solid fa-calculator"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-md font-bold text-navy-800">Licenciatura en Enseñanza de las Matemáticas</h4>
+                                    <p class="text-sm text-blue-600 font-medium mt-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-spinner fa-spin-pulse text-xs"></i> Cursando en la actualidad
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Educación 3 -->
+                        <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 hover:shadow-md transition duration-300">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-blue-600 hidden sm:block">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-md font-bold text-navy-800">Ingeniería Química con acentuación en Biotecnología</h4>
+                                    <p class="text-sm text-slate-500 font-medium mt-1 flex items-center gap-1">
+                                        <i class="fa-solid fa-check-circle text-xs text-green-500"></i> Grado obtenido
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 py-6 text-center text-sm mt-auto">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>&copy; 2026 Bernardo Carrizales Gonzalez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
